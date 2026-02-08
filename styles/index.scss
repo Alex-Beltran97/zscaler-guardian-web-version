@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+$padding-container: 1rem;
+
+
+*, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100dvb;
+  font-family: "Reddit Sans", sans-serif;
+  font-optical-sizing: auto;
+  background: #40D4EE;
+  background: linear-gradient(180deg, rgba(64, 212, 238, 1) 0%, rgba(179, 238, 248, 1) 80%, rgba(255, 255, 255, 1) 100%);
+  text-align: center;
+  padding: $padding-container;
+}

@@ -1,0 +1,47 @@
+$b-radius: 0.313rem;
+
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  height: 100dvb;
+}
+
+input {
+  outline: none;
+  border: none;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  border-radius: $b-radius;
+  box-shadow: 0 1px 2px #000;
+  font-size: 1.25rem;
+}
+
+hr {
+  width: 100%;
+  border: 1px solid #fff;
+}
+
+header {
+  font-size: 1.5rem;
+}
+
+main {
+  .min-label {
+    font-size: 1.25rem;
+  }
+  .stopwatcher {
+    font-size: 3.938rem;
+  }
+}
+
+footer {
+  p {
+    margin: 0;
+    font-size: 1rem;
+  }
+}
+
