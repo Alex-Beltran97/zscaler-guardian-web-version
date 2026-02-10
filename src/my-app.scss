@@ -5,8 +5,10 @@ $b-radius: 0.313rem;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 100%;
-  height: 100dvb;
+  height: 95dvb;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 input {
@@ -26,12 +28,18 @@ hr {
 }
 
 header {
-  font-size: 1.5rem;
+  .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
 }
 
 main {
-  .min-label {
-    font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+  .min_input {
+    .min-label {
+      font-size: 1.25rem;
+    }
   }
   .stopwatcher {
     font-size: 3.938rem;
@@ -45,3 +53,41 @@ footer {
   }
 }
 
+@media screen and (min-width: 768px) {
+  :host {
+    justify-content: start;
+  }
+
+  header {
+    .title {
+      font-size: 2.5rem;
+    }
+  }
+
+  main {
+    max-width: 46.125rem;
+    height: 100%;
+    .min_input {
+      padding: 0.75rem 1rem 0;
+      display: flex;
+      .min-label {
+        font-size: 2rem;
+      }
+      input {
+        width: 4.75rem;
+        height: 4.75rem;
+        font-size: 2rem;
+      }
+    }
+    hr {
+        margin: 0;
+      }
+    .stopwatcher {
+      margin-top: 1.125rem;
+      font-size: 5rem;
+    }
+    .btn {
+      font-size: 2rem !important;
+    }
+  }
+}

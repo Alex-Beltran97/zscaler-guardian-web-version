@@ -2,6 +2,9 @@
 
 $padding-container: 1rem;
 
+:root {
+  --bs-border-radius: 0.313rem;
+}
 
 *, html {
   margin: 0;

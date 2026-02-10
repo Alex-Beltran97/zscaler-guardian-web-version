@@ -15,14 +15,16 @@ export class MyApp extends LitElement {
       <header>
         <h1 class="title">Zscaler Guardian</h1>
       </header>
-      <main class="container d-flex flex-column align-items-center gap-1">
-        <p class="min-label text-start">Ingresa la cantidad de minutos que deseas calcular:</p>
-        <input id="min-input" type="number" value="0" />
+      <main class="d-flex flex-column align-items-center g-1">
+        <div class="min_input">
+          <p class="min-label text-start">Ingresa la cantidad de minutos que deseas calcular:</p>
+          <input id="min-input" type="number" value="0" />
+        </div>
         <hr />
         <h2 class="stopwatcher">0:00</h2>
-        <div class="d-flex align-items-center justify-content-center gap-1">
-          <button type="button" class="btn btn-success">Iniciar</button>
-          <button type="button" class="btn btn-danger">Detener</button>
+        <div class="d-flex align-items-center justify-content-center gap-1 mt-3">
+          <button type="button" class="btn btn-success rounded py-2 px-3 py-lg-1 fs-5">Iniciar</button>
+          <button type="button" class="btn btn-danger rounded py-2 px-3 py-lg-1 fs-5">Detener</button>
         </div>
       </main>
       <footer>
