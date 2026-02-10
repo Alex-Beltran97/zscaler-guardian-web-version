@@ -31,5 +31,6 @@ dist-ssr
 
 # Variables de entorno locales (seguridad)
 .env
+.env.*
 .env.local
 .env.*.local

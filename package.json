@@ -1,13 +1,14 @@
 {
   "name": "web_version",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "sass:dev": "sass --watch styles --no-source-map --style=compressed"
+    "sass:dev": "sass --watch styles --no-source-map --style=compressed",
+    "clean": "rm -rf node_modules build/ dist/ package-lock.json"
   },
   "dependencies": {
     "@types/bootstrap": "^5.2.10",

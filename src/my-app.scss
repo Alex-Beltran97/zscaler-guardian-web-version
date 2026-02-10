@@ -34,6 +34,21 @@ header {
   }
 }
 
+@keyframes bg-blink-effect {
+  0% { 
+    background-color: transparent; 
+    color: inherit;
+  }
+  50% { 
+    background-color: #BB2D3C;
+    color: white;
+  }  
+  100% { 
+    background-color: transparent; 
+    color: inherit;
+  } 
+}
+
 main {
   margin-bottom: 0.25rem;
   .min_input {
@@ -43,6 +58,18 @@ main {
   }
   .stopwatcher {
     font-size: 3.938rem;
+    padding: 0 1rem; 
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+  }
+
+  .alert_bg {
+    animation: bg-blink-effect 1.5s ease-in-out infinite;
+  }
+
+  .fail_bg {
+    animation: none;
+    background-color: #cdcdcd;
   }
 }
 
