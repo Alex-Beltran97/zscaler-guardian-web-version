@@ -129,6 +129,9 @@ export class MyApp extends LitElement {
     return html`
       <header>
         <h1 class="title">Zscaler Guardian</h1>
+        <figure class="title__icon">
+          <img src="https://res.cloudinary.com/duzyd4ju7/image/upload/v1770705939/logo_fyehob.png" />
+        </figure>
       </header>
     `;
   }

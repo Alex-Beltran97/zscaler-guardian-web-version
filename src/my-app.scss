@@ -28,9 +28,21 @@ hr {
 }
 
 header {
+  display: flex;
+  align-items: center;
   .title {
     font-size: 1.5rem;
     font-weight: 600;
+  }
+  .title__icon {
+    width: 3.938rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    img {
+      width: 100%;
+    }
   }
 }
 
